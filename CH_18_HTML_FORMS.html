@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <!-- Basic Form Structure -->
+    <!-- <form action="/CH_13_HTML_EMAIL_LINKS.html" method="post" enctype="multipart/form-data" target="_blank">
+</form> -->
+
+    <!-- FORM Controls -->
+    <!-- 1.Text Input Controls (1.Single Line text input controls (input type ="text") ),(2.Password Input Controls (input type"Password")),(3.Multi Line Input Controls(textarea rows and cols)) -->
+    <!--Single-line text input controls  -->
+    <form>
+        First name:
+        <input type="text" name="first_name" value="John" size="5" maxlength="8" />
+        <br /> Last name: <input type="text" name="last_name" value="Doe" />
+    </form>
+
+    <!-- Password Input controls -->
+    <form>
+        User ID : <input type="text" name="user_id" /> <br /> Password: <input type="password" name="password" />
+    </form>
+
+    <!-- Multiple-Line Text Input Controls -->
+    <form>
+        Description: <br />
+        <textarea rows="5" cols="50" name="description">
+Enter description here...
+</textarea
+      >
+      <br />
+      <!-- 2.Checkbox Control -->
+      <input type="checkbox" name="maths" value="off" checked /> Maths
+      <input type="checkbox" name="physics" value="on" /> Physics
+      <br />
+      <!-- 3.Radio Button Control -->
+      <input type="radio" name="subject" value="maths" /> Maths
+      <input type="radio" name="subject" value="physics" checked /> Physics
+
+      <br />
+      <!-- 4.Select Box Control -->
+      <select name="dropdown" size="1" multiple>
+        <option value="Maths" selected>Maths</option>
+        <option value="Physics" label="Dropdown for Physics">Physics</option>
+      </select>
+      <br />
+      <!-- 5.File Upload Box -->
+      <input type="file" name="fileupload" accept="image/*" />
+      <br />
+      <!-- 6.Button Controls (type=submit/reset/button/image) -->
+      <input type="submit" name="submit" value="Submit" />
+      <input type="reset" name="reset" value="Reset" />
+      <input type="button" name="ok" value="OK" />
+      <input type="image" name="imagebutton" src="/html/images/logo.png" />
+      <br />
+      <!-- 7.Hidden Form Controls -->
+      <input type="hidden" name="pagename" value="10" />
+      <input type="submit" name="submit" value="Submit" />
+      <input type="reset" name="reset" value="Reset" />
+    </form>
+  </body>
+</html>
